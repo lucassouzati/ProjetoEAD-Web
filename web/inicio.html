@@ -2,31 +2,22 @@
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Projeto EAD-Web</title>
+        <title>Projeto de Pesquisa Inteligência Computacional aplicada a aferição de conhecimento do aluno</title>
+        <link rel="stylesheet" type="text/css" href="login.css" />
     </head>
-    <body>
+    <body background = "Recursos/fundo7.jpg">
         <br>
-        <p align="center"><img src="Recursos/ead.jpeg" width="200" height="166" alt="ead"/></p>
-        <h3 align="center">Projeto EAD-Web v0.61 Beta</h3>
-        <table border="0" align="center">
-            <thead>
-                <tr>
-                    <th><a href="./ModuloProfessor/loginProfessor.jsp" target="principal"><img src="Recursos/professor.jpg" width="150" height="155" alt="professor"/></a></th>
-                    <th><img src="Recursos/branco.jpg" width="150" height="155" alt="branco"/></th>
-                    <th><a href="./ModuloAluno/loginAluno.jsp" target="principal"><img src="Recursos/estudante.jpg" width="150" height="155" alt="estudante"/></a></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td align="center"><a href="./ModuloProfessor/loginProfessor.jsp" target="principal">Módulo Professor</a></td>
-                    <td></td>
-                    <td align="center"><a href="./ModuloAluno/loginAluno.jsp" target="principal">Módulo Aluno</a></td>
-                </tr>
-            </tbody>
-        </table>
+
+        <div id="divmodulos">
+            
+            <a style="position: absolute; top:10px; left: 108px; height: 22px;" href="./ModuloProfessor/loginProfessor.jsp" target="principal">Módulo Professor</a>
+            <a style="position: absolute; top:10px; left: 364px; height: 22px;" href="./ModuloAluno/loginAluno.jsp" target="principal">Módulo Aluno</a>
+            <a href="./ModuloProfessor/loginProfessor.jsp" target="principal"><img class ="prof" width="256" height="256" border="0"/></a>
+            <a href="./ModuloAluno/loginAluno.jsp" target="principal"><img class="aluno" width="256" height="256" border="0"/></a>
+        </div>   
     </body>
 </html>
