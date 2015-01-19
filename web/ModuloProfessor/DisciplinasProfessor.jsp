@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../geral.css" />
     </head>
     <body>
-
+        <div class="divCSSTableGenerator">
         <table style="text-align: left; width: 100%; " border="0">
             <tbody>
                 <tr>
@@ -69,5 +69,6 @@
             <input type="hidden" name="idProfessor" value=<%=idProfessor%> />
             Nome: <input type="text" name="nome" value="" /><input type="submit" value="Cadastrar" />
         </form>
+        </div>
     </body>
 </html>
