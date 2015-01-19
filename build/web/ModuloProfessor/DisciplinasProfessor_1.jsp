@@ -26,17 +26,17 @@
                 </tr>
             </tbody>
         </table>
-        <div class="CSSTableGenerator">
-        <table>
-            
+
+        <table border="1">
+            <thead>
                 <tr>
-                    <td>ID</td>
-                    <td>Nome</td>
-                    <td></td>
-                    <td></td>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th></th>
+                    <th></th>
                 </tr>
-            
-            
+            </thead>
+            <tbody>
                 <%
                             int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
                             DisciplinaDAO dao = new DisciplinaDAOImp();
@@ -59,9 +59,8 @@
                 <%
                             }
                 %>
-            
+            </tbody>
         </table>
-        </div>
         <br>
         <br>
         <form action="CadDisciplina?cmd=incluir" method="POST">

@@ -41,3 +41,23 @@ img.aluno:hover{
 	
 
 }
+
+input[type=text]{
+	width: 250px;
+	height: 20px;
+}
+input[type=password]{
+	width: 250px;
+	height: 20px;	
+}
+h1{
+	font-family: Tahoma;
+
+	font-size:22px;
+	text-align: center;
+	
+}
+h2{
+	font-family: Tahoma;
+	font-size: 15px;
+}

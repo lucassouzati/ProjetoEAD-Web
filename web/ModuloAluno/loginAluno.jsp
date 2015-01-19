@@ -12,58 +12,26 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Login Aluno</title>
+        <link rel="stylesheet" type="text/css" href="../login.css" />
     </head>
-    <body>
-        <br>
-        <table align="center">
-            <tr>
-                <td>
-                    <h2 align="center">Novo Aluno</h2>
-                    <br>
-                    <form action="CadAluno?cmd=incluir" method="post">
-                        <table>
-                            <tr>
-                                <td>Nome:</td><td><input type="text" name="nome" /></td>
-                            </tr>
-                            <tr>
-                                <td>Login:</td><td><input type="text" name="login" /></td>
-                            </tr>
-                            <tr>
-                                <td>Senha:</td><td><input type="password" name="senha" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input type="submit" name="btCadastrar" value="Enviar" />
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </td>
-                <td>
-                    <img src="../Recursos/branco.jpg" width="207" height="104" alt="branco"/>
-                </td>
-                <td>
-                    <h2 align="center">Aluno Já Cadastrado</h2>
-                    <br>
-                    <br>
+    <body background = "../Recursos/fundo7.jpg">
+        <div id="divmodulos" >
+            <h1 align="center">Módulo Aluno</h1>
                     <form action="CadAluno?cmd=validar" method="post">
-                        <table>
-                            <tr>
-                                <td>Login:</td><td><input type="text" name="login" /></td>
-                            </tr>
-                            <tr>
-                                <td>Senha:</td><td><input type="password" name="senha" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input type="submit" name="btLogar" value="Enviar" />
-                                </td>
-                            </tr>
-                        </table>
+                        <div>
+                            
+                            <h2>Login: </h2>
+                            <input type="text" name="login" />
+                            <br>                            
+                            <h2>Senha: </h2>
+                            <input type="password" name="senha" />
+                            <br>
+                            <br>
+                            <input type="submit" name="btLogar" value="Enviar" />
+                            <a href="loginNovoAluno.jsp"/>Ainda não tenho cadastro</a>
+                        </div>
                     </form>
-                </td>
-            </tr>
-        </table>
+        </div>
     </body>
 </html>
 

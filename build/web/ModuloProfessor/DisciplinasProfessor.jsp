@@ -13,6 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Disciplinas</title>
+        <link rel="stylesheet" type="text/css" href="../geral.css" />
     </head>
     <body>
 
@@ -25,17 +26,17 @@
                 </tr>
             </tbody>
         </table>
-
-        <table border="1">
-            <thead>
+        <div class="CSSTableGenerator">
+        <table>
+            
                 <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th></th>
-                    <th></th>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td></td>
+                    <td></td>
                 </tr>
-            </thead>
-            <tbody>
+            
+            
                 <%
                             int idProfessor = Integer.parseInt(request.getParameter("idProfessor"));
                             DisciplinaDAO dao = new DisciplinaDAOImp();
@@ -58,8 +59,9 @@
                 <%
                             }
                 %>
-            </tbody>
+            
         </table>
+        </div>
         <br>
         <br>
         <form action="CadDisciplina?cmd=incluir" method="POST">
