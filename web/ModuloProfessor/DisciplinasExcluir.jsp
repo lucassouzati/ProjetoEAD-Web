@@ -19,24 +19,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Exclusão de Disciplina</title>
+        <link rel="stylesheet" type="text/css" href="../geral.css" />
     </head>
     <body>
-        <h2>Atenção!</h2>
-        <h3>Há <%=totalTermos%> Termos e <%=totalPerguntas%> perguntas cadastradas para essa disciplina.</h3>
-        <h3>Confirma a Exclusão?</h3>
-        <table border="0">
-            <tbody>
-                <tr>
-                    <td><form action="CadDisciplina?cmd=confirmaExclusao" method="POST">
-                            <input type="hidden" name="idDisciplina" value="<%=idDisciplina%>">
-                            <input type="hidden" name="idProfessor" value="<%=idProfessor%>">
-                            <input type="submit" value="Sim" />
-                        </form></td>
-                    <td><form action="DisciplinasProfessor.jsp?idProfessor=<%=idProfessor%>" method="POST">
-                            <input type="submit" value="Não" />
-                        </form></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="divCSSTableGenerator">
+            <h2>Atenção!</h2>
+            <h3>Há <%=totalTermos%> Termos e <%=totalPerguntas%> perguntas cadastradas para essa disciplina.</h3>
+            <h3>Confirma a Exclusão?</h3>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td><form action="CadDisciplina?cmd=confirmaExclusao" method="POST">
+                                <input type="hidden" name="idDisciplina" value="<%=idDisciplina%>">
+                                <input type="hidden" name="idProfessor" value="<%=idProfessor%>">
+                                <input type="submit" value="Sim" />
+                            </form></td>
+                        <td><form action="DisciplinasProfessor.jsp?idProfessor=<%=idProfessor%>" method="POST">
+                                <input type="submit" value="Não" />
+                            </form></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
