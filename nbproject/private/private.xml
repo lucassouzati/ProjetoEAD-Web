@@ -4,25 +4,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/conexao/TermoDAO.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/dominio/Termo.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/TextMining/Comparador.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/TextMining/Stopwords.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/servlets/CadTermo.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/conexao/ProfessorDAOImp.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/TextMining/Minerador.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/conexao/TermoDAOImp.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/TextMining/Tokenizador.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloAluno/loginAluno.jsp</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/index.html</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloAluno/loginNovoAluno.jsp</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/conexao/ConnectionFactory.java</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloAluno/loginAluno_2.jsp</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/src/java/servlets/CadTermoComposto.java</file>
             <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/inicio.html</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/TermoConceito.jsp</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/loginNovoProfessor.jsp</file>
-            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/loginProfessor_1.jsp</file>
+            <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/DisciplinasProfessor.jsp</file>
             <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/loginProfessor.jsp</file>
             <file>file:/C:/Users/Lucas%20Siqueira/Dropbox/Documentos/IFF%20Sistemas/Projetos/Projeto%20de%20Pesquisa%20IC%20em%20educacao%20prototipo/ProjetoEAD-Web/web/ModuloProfessor/Termos.jsp</file>
         </group>
