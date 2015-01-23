@@ -27,73 +27,78 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Cadastro de LOs</title>
+        <link rel="stylesheet" type="text/css" href="../geral.css" />
     </head>
     <body>
-        <table style="text-align: left; width: 100%; " border="0">
-            <tbody>
-                <tr>
-                    <td align="left"><h3>Disciplina: <%=nome%></h3></td>
-                    <td></td>
-                    <td align="right"><a href="DisciplinasProfessor.jsp?idProfessor=<%=idProfessor%>">Voltar para Disciplinas</a></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table style="text-align: left; width: 100%; " border="1">
-            <tbody>
-                <tr>
-                    <td align="left"><a href="./Termos.jsp?idDisciplina=<%=idDisciplina%>&idProfessor=<%=idProfessor%>">LOs</a></td>
-                    <td align="left"><a href="./TermoPerguntas.jsp?idDisciplina=<%=idDisciplina%>&nome=<%=nome%>&idProfessor=<%=idProfessor%>">Perguntas</a></td>
-                    <td align="left"><a href="./Resultados.jsp?idDisciplina=<%=idDisciplina%>&idProfessor=<%=idProfessor%>">Resultados</a></td>
-                </tr>
-                <tr>
-                    <td colspan="3" rowspan="1">
-                        <h3>LOs</h3>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-<%
-            TermoDAO daoT = new TermoDAOImp();
-            List<Termo> termos = daoT.getListaFiltrada(idDisciplina);
-            for (int i = 0; i <= termos.size() - 1; i++) {
-                id = termos.get(i).getID();
-                nome = termos.get(i).getNome();
-%>
-                                <tr>
-                                    <td><%=id%></td>
-                                    <td><%=nome%></td>
-                                    <td><a href="./TermoConceito.jsp?idDisciplina=<%=idDisciplina%>&idTermo=<%=id%>&nome=<%=nome%>&idProfessor=<%=idProfessor%>">Detalhes</a></td>
-                                    <td><form action="CadTermo?cmd=excluir" method="POST">
-                                            <input type="hidden" name="idDisciplina" value="<%=idDisciplina%>" />
-                                            <input type="hidden" name="idTermo" value="<%=id%>" />
-                                            <input type="hidden" name="idProfessor" value="<%=idProfessor%>" />
-                                            <input type="submit" value="Excluir" />
-                                        </form>
-                                    </td>
-                                </tr>
-<%          }  // fim for
-%>
-                            </tbody>
-                        </table>
-                        <br>
-                        <br>
-                        <br>
-                        <form action="CadTermo?cmd=incluir" method="POST">
-                            Novo LO:<br>
-                            <input type="hidden" name="idProfessor" value=<%=idProfessor%> />
-                            <input type="hidden" name="idDisciplina" value=<%=idDisciplina%> />
-                            Nome: <input type="text" name="nome" value="" /><input type="submit" value="Cadastrar" />
-                        </form>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="divCSSTableGenerator">
+            <table style="text-align: left; width: 100%; " border="0">
+                <tbody>
+                    <tr>
+                        <td align="left"><h3>Disciplina: <%=nome%></h3></td>
+                        <td></td>
+                        <td align="right"><a href="DisciplinasProfessor.jsp?idProfessor=<%=idProfessor%>">Voltar para Disciplinas</a></td>
+                    </tr>
+                </tbody>
+            </table>
+                    
+            <table style="text-align: left; width: 100%; " border="0">
+                <tbody>
+                    <tr>
+                        <td align="left"><h3>LOs</h3></td>
+                        <td align="left"><a href="./TermoPerguntas.jsp?idDisciplina=<%=idDisciplina%>&nome=<%=nome%>&idProfessor=<%=idProfessor%>">Perguntas</a></td>
+                        <td align="left"><a href="./Resultados.jsp?idDisciplina=<%=idDisciplina%>&idProfessor=<%=idProfessor%>">Resultados</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">
+                            
+                            <div class="CSSTableGenerator">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Nome</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    
+                                    
+        <%
+                    TermoDAO daoT = new TermoDAOImp();
+                    List<Termo> termos = daoT.getListaFiltrada(idDisciplina);
+                    for (int i = 0; i <= termos.size() - 1; i++) {
+                        id = termos.get(i).getID();
+                        nome = termos.get(i).getNome();
+        %>
+                                        <tr>
+                                            <td><%=id%></td>
+                                            <td><%=nome%></td>
+                                            <td><a href="./TermoConceito.jsp?idDisciplina=<%=idDisciplina%>&idTermo=<%=id%>&nome=<%=nome%>&idProfessor=<%=idProfessor%>">Detalhes</a></td>
+                                            <td><form action="CadTermo?cmd=excluir" method="POST">
+                                                    <input type="hidden" name="idDisciplina" value="<%=idDisciplina%>" />
+                                                    <input type="hidden" name="idTermo" value="<%=id%>" />
+                                                    <input type="hidden" name="idProfessor" value="<%=idProfessor%>" />
+                                                    <input type="submit" value="Excluir" />
+                                                </form>
+                                            </td>
+                                        </tr>
+        <%          }  // fim for
+        %>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <form action="CadTermo?cmd=incluir" method="POST">
+                                Novo LO:<br>
+                                <input type="hidden" name="idProfessor" value=<%=idProfessor%> />
+                                <input type="hidden" name="idDisciplina" value=<%=idDisciplina%> />
+                                Nome: <input type="text" name="nome" value="" /><input type="submit" value="Cadastrar" />
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+     </div>
     </body>
 </html>
